@@ -1,0 +1,27 @@
+name: Exercise
+description: Track an exercise attempt and outcome
+labels: [exercise]
+body:
+  - type: input
+    id: course
+    attributes:
+      label: Course
+      placeholder: e.g., CS111
+    validations:
+      required: true
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+    validations:
+      required: true
+  - type: textarea
+    id: prompt
+    attributes:
+      label: Exercise prompt
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Attempt notes

@@ -1,0 +1,23 @@
+name: Question
+description: Capture open questions for follow-up
+labels: [question]
+body:
+  - type: input
+    id: course
+    attributes:
+      label: Course
+      placeholder: e.g., CS229
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      placeholder: What is unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      placeholder: Links, notes, or examples to revisit
