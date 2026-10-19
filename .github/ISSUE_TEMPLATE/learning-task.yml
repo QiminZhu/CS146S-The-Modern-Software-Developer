@@ -1,0 +1,25 @@
+name: Learning Task
+description: Plan or track a focused learning task
+labels: [learning]
+body:
+  - type: input
+    id: course
+    attributes:
+      label: Course
+      placeholder: e.g., CS161
+    validations:
+      required: true
+  - type: textarea
+    id: objective
+    attributes:
+      label: Learning objective
+      placeholder: What do you want to learn?
+    validations:
+      required: true
+  - type: textarea
+    id: definition_of_done
+    attributes:
+      label: Completion criteria
+      placeholder: How will you know this task is complete?
+    validations:
+      required: true
